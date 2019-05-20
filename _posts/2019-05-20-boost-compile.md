@@ -5,7 +5,9 @@ date:   2019-05-20 15:11
 categories: post
 ---
 sudo update-alternatives --remove-all gcc
+
 sudo update-alternatives --remove-all g++
+
 sudo apt-get install -y gcc-4.8 g++-4.8 gcc-4.9 g++-4.9 gcc-5 g++-5 gcc-6 g++-6 gcc-7 g++-7
 
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 10
