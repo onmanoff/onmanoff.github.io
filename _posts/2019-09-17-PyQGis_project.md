@@ -9,6 +9,7 @@ categories: qgis
 # qgis and PyQt classes you will use in this script as shown below:
 import os
 from zipfile import ZipFile
+from datetime import datetime
 from qgis.core import  (QgsProject,
                                 QgsVectorLayer,
                                 QgsCoordinateReferenceSystem,
@@ -28,13 +29,13 @@ project.clear()
 # project.addMapLayer(vlayer)
 # print(project.fileName())
 # 
-folder = 'D:\\tilemap\\NWP\\UM\\GDPS\\ERLY\\980202\\201905\\15'
-file = 'g768_v070_ergl_pres_20190515060000.201905150600_RELV_950.zip'
+dt = datetime(2019, 9, 7, 0, 0)
+folder = 'D:\\tilemap\\NWP\\UM\\GDPS\\ERLY\\980202\\{0}\\{1}'.format(dt.strftime("%Y%m"), dt.strftime("%d"))
+file = 'g768_v070_ergl_pres_{0}.{1}_{2}_{3}.zip'.format(dt.strftime("%Y%m%d%H%M%S"), dt.strftime("%Y%m%d%H%M"), "SHEV", 850)
 lineLayer = 'LINE'
 with ZipFile(os.path.join(folder, file)) as vzip:
     vzip.extract(lineLayer, folder);
 #    with vzip.open(lineLayer) as vfile:
-
 
 # Load another project
 project.read('D:\\PyQGIS\\sample.qgz')
