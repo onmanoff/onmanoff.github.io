@@ -16,8 +16,8 @@ categories: etc
     - 초기화: def initialize 변수 end
     - private, exti;
 1. proc
-    ## 선언:   toast = Proc.new do | parameter | {code} end
-    ## block: do ~ end 사이..
-    ## 호출: proc.call
-    ## 메소드 파라메터로 사용 함.
-    ## 블럭을 직접 기술: def eachEven(&wasABlock_nowAProc)
+    - 선언:   toast = Proc.new do | parameter | {code} end
+    - block: do ~ end 사이..
+    - 호출: proc.call
+    - 메소드 파라메터로 사용 함.
+    - 블럭을 직접 기술: def eachEven(&wasABlock_nowAProc)
