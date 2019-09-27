@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Gitlab 복구"
-date:   2019-05-20 15:11
+date:   2019-09-24 15:11
 categories: etc
 ---
 <ul>
