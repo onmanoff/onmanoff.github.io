@@ -16,7 +16,7 @@ from qgis.core import  (QgsProject,
                                 QgsCoordinateTransform,
                                 QgsPointXY
                        )
-def loadLayer (dt, var ,press) :
+def loadLayer (dt, var ,pres) :
     # Get the project instance
     project = QgsProject.instance()
     # Print the current project file name (might be empty in case no projects have been loaded)
@@ -31,6 +31,7 @@ def loadLayer (dt, var ,press) :
     folder = 'D:\\tilemap\\NWP\\UM\\GDPS\\ERLY\\980202\\{0}\\{1}'.format(dt.strftime("%Y%m"), dt.strftime("%d"))
     file = 'g768_v070_ergl_pres_{0}.{1}_{2}_{3}.zip'.format(dt.strftime("%Y%m%d%H%M%S"), dt.strftime("%Y%m%d%H%M"), var, pres)
     lineLayer = 'LINE'
+    print (os.path.join(folder, file))
     with ZipFile(os.path.join(folder, file)) as vzip:
         vzip.extract(lineLayer, folder);
     #    with vzip.open(lineLayer) as vfile:
