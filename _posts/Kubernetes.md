@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Kubernetes"
+date:   2021-01-24 13:00
+categories: python
+---
+[Python](https://wikidocs.net/book/1553)
 1. Step 1: Update Docker Package Database
   - yum check-update
 
