@@ -4,7 +4,6 @@ title:  "Kubernetes"
 date:   2021-01-24 13:00
 categories: python
 ---
-[Python](https://wikidocs.net/book/1553)
 1. Step 1: Update Docker Package Database
   - yum check-update
 
@@ -103,3 +102,7 @@ EOF
    3) --discovery-token-ca-cert-hash를 모를 경우
      - openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | \ 
         openssl dgst -sha256 -hex | sed 's/^.* //'
+
+
+[Docker](https://phoenixnap.com/kb/how-to-install-docker-centos-7)
+[Kubernetes](https://phoenixnap.com/kb/how-to-install-kubernetes-on-centos)
