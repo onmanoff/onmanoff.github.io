@@ -103,6 +103,5 @@ EOF
      - openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | \ 
         openssl dgst -sha256 -hex | sed 's/^.* //'
 
-
 [Docker](https://phoenixnap.com/kb/how-to-install-docker-centos-7)
 [Kubernetes](https://phoenixnap.com/kb/how-to-install-kubernetes-on-centos)
