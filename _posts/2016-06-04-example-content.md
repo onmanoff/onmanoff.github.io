@@ -105,7 +105,7 @@ end tell
 <p>This is an <a href="#">example link</a>.</p>
 
 <p>I start my morning with a cup of coffee and
-<a href="http://www.nytimes.com/">The New York Times</a>.</p>
+<a href="https://www.nytimes.com/">The New York Times</a>.</p>
 
 ### Code snippet
 
